@@ -34,15 +34,18 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="19L-Lb-JH7" id="92Z-ht-WPw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="416.80000000000001" y="32.512315270935964"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Controller-->
         <scene sceneID="5Pg-3L-szt">
             <objects>
-                <viewController id="kIx-Nk-7g3" sceneMemberID="viewController">
+                <viewController id="kIx-Nk-7g3" customClass="AddController" customModule="todoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5KS-Dv-MxS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,11 +65,17 @@
                                 <state key="normal" title="Add">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addPressed:" destination="kIx-Nk-7g3" eventType="touchUpInside" id="mIO-Ca-AlT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hE3-dd-ME0"/>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="ByE-8U-5FH" id="I7B-z7-CyJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qnB-NY-hTr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
